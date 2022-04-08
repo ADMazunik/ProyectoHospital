@@ -66,7 +66,7 @@ main {
 }
 .fachada {
   width: 100%;
-  background-image: url(../images/hospi-frente.jpg);
+  background-image: url("../images/hospi-frente.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
