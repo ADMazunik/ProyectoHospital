@@ -15,7 +15,8 @@ body {
 }
 header {
   background-color: rgb(129, 186, 250);
-  z-index: 1;
+  background-image: linear-gradient(to right, rgb(129, 186, 250), rgba(44, 125, 224, 0.74));
+  z-index: 1030;
   position: sticky;
   top: 0;
   grid-area: header;
@@ -47,6 +48,7 @@ main {
   color: white;
 }
 .navbar__nav li a:hover {
+  transition: color 0.2s;
   color: rgba(0, 0, 0, 0.788);
 }
 .navbar__buttons {
@@ -113,6 +115,7 @@ main {
   text-align: justify;
 }
 .especialidades {
+  display: grid;
   padding: 0 1rem;
   text-align: left;
   font-size: 1.2rem;
@@ -132,6 +135,7 @@ main {
   margin: 0.5rem 0;
 }
 .turnos__card {
+  display: grid;
   margin-top: 1rem;
   border: 1px solid rgb(129, 186, 250);
   background-color: #a1e8f575;
@@ -192,6 +196,7 @@ form textarea {
   border: 2px solid rgb(0, 0, 0);
 }
 .telefonos {
+  display: grid;
   margin: 1rem 0;
   border: 2px solid rgb(129, 186, 250);
   background-color: #a1e8f575;
@@ -253,7 +258,8 @@ footer {
   color: rgba(46, 46, 253, 0.863);
 }
 .socialmedia__buttons i:hover {
-  color: rgb(255, 255, 255);
+  transition: color 0.2s;
+  color: rgba(178, 75, 238, 0.897);
 }
 @media (min-width: 768px) {
   main {
@@ -311,7 +317,6 @@ footer {
     justify-content: space-evenly;
   }
   .especialidades {
-    display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "adultos" "pediatria" "estudios" "servicios";
@@ -329,7 +334,6 @@ footer {
     grid-area: "servicios";
   }
   .turnos__cards {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     column-gap: 1rem;
@@ -359,7 +363,6 @@ footer {
     width: 80%;
   }
   .telefonos {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
