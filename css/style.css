@@ -8,9 +8,6 @@ body {
   background-image: linear-gradient(to right, rgb(129, 186, 250), rgba(61, 122, 196, 0.74));
 }
 .sectiontitle {
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 2rem;
   color: #009aae;
   text-transform: uppercase;
 }
@@ -37,6 +34,9 @@ body {
 .historia p {
   font-size: 1.3rem;
   text-align: justify;
+}
+.sm__text {
+  display:none;
 }
 .especialidades {
   display: grid;
@@ -155,8 +155,11 @@ footer {
   transition: color 0.2s;
   color: rgba(178, 75, 238, 0.897);
 }
-@media (max-width: 1024px) {
-  footer {
-    font-size: 16px;
+@media (max-width: 768px) {
+  .sm__text {
+  display: block;
+  background-color: black;
+  color: rgb(228, 228, 228);
+  transform: translateY(-24px);
   }
 }
