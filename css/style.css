@@ -1,63 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
+  overflow-x: hidden;
   background-color: rgba(203, 225, 250, 0.815);
   font-family: "Montserrat", sans-serif;
-  display: grid;
-  grid-template-rows: auto 1fr 7.5rem;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
 }
-header {
+.menu__color {
   background-color: rgb(129, 186, 250);
-  background-image: linear-gradient(to right, rgb(129, 186, 250), rgba(44, 125, 224, 0.74));
-  z-index: 1030;
-  position: sticky;
-  top: 0;
-  grid-area: header;
-}
-
-img {
-  max-width: 100%;
-}
-main {
-  width: 95%;
-  margin-right: auto;
-  margin-left: auto;
-  grid-area: main;
-}
-.navbar {
-  padding-bottom: 0.5rem;
-}
-.navbar__logo {
-  height: 5rem;
-  width: 12.5rem;
-}
-.navbar__nav {
-  text-align: center;
-  display: block;
-  list-style: none;
-}
-.navbar__nav li a {
-  text-decoration: none;
-  color: white;
-}
-.navbar__nav li a:hover {
-  transition: color 0.2s;
-  color: rgba(0, 0, 0, 0.788);
-}
-.navbar__buttons {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-#intro-section {
-  margin: 1.5rem 0 1rem;
+  background-image: linear-gradient(to right, rgb(129, 186, 250), rgba(61, 122, 196, 0.74));
 }
 .sectiontitle {
   margin-bottom: 1rem;
@@ -67,44 +15,20 @@ main {
   text-transform: uppercase;
 }
 .fachada {
-  width: 100%;
+  height: 60vh;
   background-image: url("../images/hospi-frente.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .fachada__text {
-  margin: 1rem;
-  padding: 1rem 0 3rem;
-  font-size: 1.5rem;
-  text-shadow: 0 0 0.5rem black;
-  line-height: 1;
+  text-shadow: 0 0 1rem black;
 }
 .fachada__text--color {
   color: white;
 }
-.fachada__text--bigger {
-  margin-top: 0.5rem;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
-}
-.description p {
-  margin: 1.5rem 0;
-  font-weight: 500;
-}
-.description__text {
-  font-size: 1.5rem;
-  text-align: justify;
-}
 .description__text--important {
   border: 2px solid rgb(129, 186, 250);
   background-color: #a1e8f575;
-  font-weight: bold;
-  padding: 1rem;
-  text-align: center;
   border-radius: 10px;
 }
 .historia h2 {
@@ -135,27 +59,18 @@ main {
   margin: 0.5rem 0;
 }
 .turnos__card {
-  display: grid;
-  margin-top: 1rem;
   border: 1px solid rgb(129, 186, 250);
   background-color: #a1e8f575;
-  text-align: center;
-  font-size: 1.5rem;
   border-radius: 10px;
-}
-.turnos__card1 {
-  line-height: 3rem;
 }
 .turnos__card a {
   text-decoration: none;
   color: #009aae;
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 .turnos__card a:hover {
-  font-size: 2rem;
+  transition: all 0.5s;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin: 0.5rem 0;
 }
 .contacto__map {
   width: 100%;
@@ -230,154 +145,18 @@ form textarea {
 .shadow {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
 }
-.pt-1 {
-  padding-top: 0.5rem;
-}
 footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.5rem;
   background-color: #f9f9f9ad;
 }
-.socialmedia {
-  display: flex;
-  align-items: center;
-  margin-right: 0.5rem;
-}
-.socialmedia__text {
-  font-size: 1rem;
-  text-align: center;
-  font-weight: bold;
-}
 .socialmedia__buttons {
-  margin-left: 1rem;
-  font-size: 2.5rem;
   color: rgba(46, 46, 253, 0.863);
 }
 .socialmedia__buttons i:hover {
   transition: color 0.2s;
   color: rgba(178, 75, 238, 0.897);
 }
-@media (min-width: 768px) {
-  main {
-    width: 85%;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 4.6rem;
-  }
-  .navbar__nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  .navbar__buttons {
-    margin-bottom: 0;
-    margin-left: 0.5rem;
-  }
-  .fachada {
-    min-height: 30vh;
-  }
-  .fachada__text {
-    margin: 2rem;
-    font-size: 2rem;
-    text-shadow: 0 0 0.5rem black;
-    line-height: 1;
-  }
-  .fachada__text--color {
-    color: white;
-  }
-  .fachada__text--bigger {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-}
-@media (min-width: 1024px) {
-  main {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .navbar {
-    max-width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .fachada {
-    min-height: 35rem;
-  }
-  .fachada__text {
-    padding-top: 4rem;
-  }
-  .especialidades--column {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .especialidades {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "adultos" "pediatria" "estudios" "servicios";
-  }
-  .especialidades__adultos {
-    grid-area: "adultos";
-  }
-  .especialidades__pediatria {
-    grid-area: "pediatria";
-  }
-  .especialidades_estudios {
-    grid-area: "estudios";
-  }
-  .especialidades__servicios {
-    grid-area: "servicios";
-  }
-  .turnos__cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 1rem;
-    grid-template-areas:
-      "card1 card2"
-      "card3 card3";
-  }
-  .turnos__card {
-    padding: 1rem;
-  }
-  .turnos__card1 {
-    grid-area: card1;
-  }
-  .turnos__card2 {
-    grid-area: card2;
-  }
-  .turnos__card3 {
-    grid-area: card3;
-    margin-bottom: 1rem;
-  }
-  .contacto {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  .contacto__map {
-    width: 80%;
-  }
-  .telefonos {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "tel mail"
-      "llegar llegar";
-  }
-  .telefonos__tel {
-    padding-left: 2rem;
-    grid-area: tel;
-  }
-  .telefonos__mail {
-    grid-area: mail;
-  }
-  .telefonos__llegar {
-    grid-area: llegar;
-    justify-self: center;
+@media (max-width: 1024px) {
+  footer {
+    font-size: 16px;
   }
 }
