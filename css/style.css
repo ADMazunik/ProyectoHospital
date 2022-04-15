@@ -28,35 +28,17 @@ body {
   background-color: #a1e8f575;
   border-radius: 10px;
 }
-.historia h2 {
-  margin: 0.4rem 0;
-}
 .historia p {
-  font-size: 1.3rem;
   text-align: justify;
 }
 .sm__text {
-  display:none;
-}
-.especialidades {
-  display: grid;
-  padding: 0 1rem;
-  text-align: left;
-  font-size: 1.2rem;
+  display: none;
 }
 .especialidades ul li li {
   list-style: none;
-  margin-left: 0.4rem;
 }
 .especialidades strong {
   font-style: oblique;
-  font-size: 1.1rem;
-}
-.especialidades div {
-  margin-top: 1rem;
-}
-.especialidades div li {
-  margin: 0.5rem 0;
 }
 .turnos__card {
   border: 1px solid rgb(129, 186, 250);
@@ -68,79 +50,21 @@ body {
   color: #009aae;
 }
 .turnos__card a:hover {
-  transition: all 0.5s;
-  font-size: 1.5rem;
+  transition: all 0.2s;
+  font-size: 2rem;
   font-weight: 700;
 }
-.contacto__map {
-  width: 100%;
-}
-.contacto__formulario * {
-  font-size: 1rem;
-}
-.contacto__formulario h2 {
-  font-size: 2rem;
-  margin-bottom: rem;
-}
-form label,
-input {
-  display: block;
-}
-form textarea {
-  margin: 0.5rem 0;
-}
-.formulario__boletin {
-  font-size: 1.1rem;
-  margin-right: 0.5rem;
-}
-.formulario__btn {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  height: 2rem;
-  width: 20rem;
-  color: white;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  background-color: #009aae;
-}
-.formulario__btn:hover {
-  color: black;
-  font-weight: 600;
-  border: 2px solid rgb(0, 0, 0);
-}
 .telefonos {
-  display: grid;
-  margin: 1rem 0;
   border: 2px solid rgb(129, 186, 250);
   background-color: #a1e8f575;
-}
-.telefonos--small {
-  top: 0;
-  margin-right: 1rem;
-  padding: 0.5rem;
-  border-radius: 12px;
+  border-radius: 25px;
 }
 .telefonos--small a {
   color: #009aae;
-  font-weight: 600;
 }
 .telefonos--small a:hover {
   font-weight: 700;
-}
-.telefonos--big {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  font-size: 1.3rem;
-}
-.telefonos--small p {
-  font-size: 1.1rem;
-}
-.telefonos--small a {
-  font-size: 1.5rem;
-  font-size: 700;
-  text-decoration: none;
+  transition: all 0.2s;
 }
 .shadow {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
@@ -157,9 +81,9 @@ footer {
 }
 @media (max-width: 768px) {
   .sm__text {
-  display: block;
-  background-color: black;
-  color: rgb(228, 228, 228);
-  transform: translateY(-24px);
+    display: block;
+    background-color: black;
+    color: rgb(228, 228, 228);
+    transform: translateY(-24px);
   }
 }
