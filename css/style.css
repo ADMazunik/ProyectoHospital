@@ -23,6 +23,17 @@ body {
 .fachada__text--color {
   color: white;
 }
+.btn--tel {
+  display: none;
+}
+.btn-turnos {
+  background-color: rgb(114, 175, 245);
+  color: white;
+}
+.btn-turnos:hover {
+  background-color: rgb(80, 141, 211);
+  color: white;
+}
 .description__text--important {
   border: 2px solid rgb(129, 186, 250);
   background-color: #a1e8f575;
@@ -85,5 +96,10 @@ footer {
     background-color: black;
     color: rgb(228, 228, 228);
     transform: translateY(-24px);
+  }
+}
+@media (min-width: 768px) {
+  .btn--tel {
+    display: inline-block;
   }
 }
