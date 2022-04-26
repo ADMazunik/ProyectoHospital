@@ -1,0 +1,121 @@
+@import "variable";
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(203, 225, 250, 0.815);
+    font-family: "Montserrat", sans-serif;
+  }
+  .menu__color {
+    background-color: $primary-color;
+    background-image: linear-gradient(to right, $primary-color, rgba(61, 122, 196, 0.74));
+  }
+  .sectiontitle {
+    color: #009aae;
+    text-transform: uppercase;
+  }
+  .fachada {
+    height: 60vh;
+    background-image: url("../images/hospi-frente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .fachada__text {
+    text-shadow: 0 0 1rem black;
+  }
+  .fachada__text--color {
+    color: white;
+  }
+  .btn--tel {
+    display: none;
+  }
+  .btn-turnos {
+    background-color: rgb(114, 175, 245);
+    color: white;
+    &:hover {
+        background-color: rgb(80, 141, 211);
+        color: white;
+    }
+  }
+  .description__text--important {
+    border: 2px solid $primary-color;
+    background-color: #a1e8f575;
+    border-radius: 10px;
+  }
+  .historia {
+      p {
+        text-align: justify;
+      }
+  }
+  .sm__text {
+    display: none;
+  }
+  .especialidades {
+      ul {
+          li {
+              li {
+                list-style: none;
+              }
+          }
+      }
+      strong {
+        font-style: oblique;
+      }
+  }
+  .turnos__card {
+    border: 1px solid $primary-color;
+    background-color: #a1e8f575;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        color: #009aae;
+        &:hover {
+            transition: all 0.2s;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+  }
+  .telefonos {
+    border: 2px solid $primary-color;
+    background-color: #a1e8f575;
+    border-radius: 25px;
+  }
+  .telefonos--small {
+      a {
+        color: #009aae;
+        &:hover {
+                color: #009aae;
+                font-weight: 700;
+                transition: all 0.2s;
+        }
+      }
+  }
+  .shadow {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  }
+  footer {
+    background-color: #f9f9f9ad;
+  }
+  .socialmedia__buttons {
+      i {
+          &:hover {
+            transition: color 0.2s;
+            color: rgba(178, 75, 238, 0.897);     
+          }
+      }
+    color: rgba(46, 46, 253, 0.863);
+  }
+  @media (max-width: 768px) {
+    .sm__text {
+      display: block;
+      background-color: black;
+      color: rgb(228, 228, 228);
+      transform: translateY(-24px);
+    }
+  }
+  @media (min-width: 768px) {
+    .btn--tel {
+      display: inline-block;
+    }
+  }
+  

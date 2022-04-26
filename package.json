@@ -1,0 +1,19 @@
+{
+  "name": "hospital-mazunik",
+  "version": "1.0.0",
+  "description": "Hola! Este es mi primer repositorio de Github. en él estaré construyendo un sitio web funcional perteneciente al lugar donde trabajo",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADMazunik/ProyectoHospital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADMazunik/ProyectoHospital/issues"
+  },
+  "homepage": "https://github.com/ADMazunik/ProyectoHospital#readme"
+}
