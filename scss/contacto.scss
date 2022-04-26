@@ -1,0 +1,15 @@
+.telefonos {
+    border: 2px solid $primary-color;
+    background-color: #a1e8f575;
+    border-radius: 25px;
+  }
+  .telefonos--small {
+      a {
+        color: #009aae;
+        &:hover {
+                color: #009aae;
+                font-weight: 700;
+                transition: all 0.2s;
+        }
+      }
+  }
