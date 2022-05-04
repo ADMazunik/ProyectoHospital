@@ -21,8 +21,10 @@
   
   .socialmedia__buttons {
     color: rgba(46, 46, 253, 0.863);
-  }
-  .socialmedia__buttons i:hover {
-    transition: color 0.2s;
-    color: rgba(178, 75, 238, 0.897);
+    i {
+      &:hover {
+        transition: color 0.2s;
+        color: rgba(178, 75, 238, 0.897);
+      }
+    }
   }

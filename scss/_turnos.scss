@@ -1,14 +1,16 @@
-.turnos__card {
-    border: 1px solid $primary-color;
-    background-color: #a1e8f575;
-    border-radius: 10px;
-    a {
-        text-decoration: none;
-        color: #009aae;
-        &:hover {
-            transition: all 0.2s;
-            font-size: 2rem;
-            font-weight: 700;
+.turnos {
+    &__card {
+        border: 1px solid $primary-color;
+        background-color: #a1e8f575;
+        border-radius: 10px;
+        a {
+            text-decoration: none;
+            color: #009aae;
+            &:hover {
+                transition: all 0.2s;
+                font-size: 2rem;
+                font-weight: 700;
+            }
         }
     }
-  }
+}

@@ -3,26 +3,36 @@
     background-image: url("../images/hospi-frente.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .fachada__text {
-    text-shadow: 0 0 1rem black;
-  }
-  .fachada__text--color {
-    color: white;
-  }
-  .btn--tel {
-    display: none;
-  }
-  .btn-turnos {
-    background-color: rgb(114, 175, 245);
-    color: white;
-    &:hover {
-        background-color: rgb(80, 141, 211);
+    &__text {
+      text-shadow: 0 0 1rem black;
+      &--color {
         color: white;
+  
+      }
     }
   }
-  .description__text--important {
-    border: 2px solid $primary-color;
-    background-color: #a1e8f575;
-    border-radius: 10px;
+
+  .btn {
+    &--tel {
+      display: none;
+    }
+    &-turnos {
+      background-color: rgb(114, 175, 245);
+      color: white;
+      &:hover {
+          background-color: rgb(80, 141, 211);
+          color: white;
+      }
+    }
   }
+
+  .description {
+    &__text {
+      &--important {
+      border: 2px solid $primary-color;
+      background-color: #a1e8f575;
+      border-radius: 10px;
+      }
+    }
+  }
+

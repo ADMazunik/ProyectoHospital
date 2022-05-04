@@ -3,6 +3,8 @@
       text-align: justify;
     }
 }
-.sm__text {
-  display: none;
+.sm {
+  &__text {
+    display: none;
+  }
 }
