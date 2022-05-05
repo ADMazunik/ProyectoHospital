@@ -17,11 +17,22 @@
       display: none;
     }
     &-turnos {
+      @extend %btnfachada;
       background-color: rgb(114, 175, 245);
-      color: white;
+      
       &:hover {
           background-color: rgb(80, 141, 211);
           color: white;
+          font-weight: 600
+      }
+    }
+    &-contacto {
+      @extend %btnfachada;
+      background-color: map-get($colors, telefonos);
+      &:hover {
+        color: white;
+        background-color: rgb(2, 123, 139);
+        font-weight: 600;
       }
     }
   }
@@ -29,9 +40,7 @@
   .description {
     &__text {
       &--important {
-      border: 2px solid $primary-color;
-      background-color: #a1e8f575;
-      border-radius: 10px;
+      @include cardblock($grosor: 2px);
       }
     }
   }

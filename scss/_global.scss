@@ -1,6 +1,6 @@
   body {
     overflow-x: hidden;
-    background-color: rgba(203, 225, 250, 0.815);
+    background-color: map-get($colors, fondo) ;
     font-family: "Montserrat", sans-serif;
   }
   .menu__color {

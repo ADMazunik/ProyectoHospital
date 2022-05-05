@@ -1,1 +1,21 @@
 $primary-color: rgb(129, 186, 250);
+
+$colors: (
+    fondo: rgba(203, 225, 250, 0.815),
+    carta: rgba(161, 232, 245, 0.459),
+    telefonos: rgb(0, 154, 174),
+);
+
+@mixin cardblock($grosor: 1px, $radio: 10px){
+
+    border: $grosor solid $primary-color;
+    background-color: map-get($colors, carta);
+    border-radius: $radio;
+    
+};
+
+%btnfachada {
+    color: white;
+    border: 2px solid $primary-color;
+    transition: background-color 1s;
+}

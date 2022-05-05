@@ -1,11 +1,9 @@
 .turnos {
     &__card {
-        border: 1px solid $primary-color;
-        background-color: #a1e8f575;
-        border-radius: 10px;
+        @include cardblock;
         a {
             text-decoration: none;
-            color: #009aae;
+            color: map-get($colors, telefonos);
             &:hover {
                 transition: all 0.2s;
                 font-size: 2rem;
